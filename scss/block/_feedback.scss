@@ -1,0 +1,85 @@
+.feedback{
+    margin-top: 60px;
+    &__title{
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: center;
+        color: $bg-content;
+    }
+    &__content{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        color: $bg-text;
+        margin-top: 20px;
+    }
+    &__box{
+        overflow: auto;
+        padding-bottom: 20px;
+        margin-top: 60px;
+    }
+    &__wrapper{
+        display: flex;
+        gap: 16px;
+    }
+    &__card{
+        width: 400px;
+        min-width: 400px;
+        height: 230px;
+        border-radius: 10px;
+        transition: .3s;
+        border: 1px solid rgba(128, 128, 128, 0.263);
+        &:hover{
+            border: 1px solid $bg-py;
+            box-shadow: 8px rgba(220, 220, 220, 0.39);
+        }
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 15px;
+        padding: 30px 30px 0px 30px;
+        .star{
+            display: flex;
+            flex-direction: row;
+            margin-left: 108px;
+        }
+    }
+    &__desc{
+        display: flex;
+        flex-direction:column;
+    }
+    &__info{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        color: $bg-text;
+        padding-left: 13px;
+        padding-top: 20px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    ::-webkit-scrollbar{
+        width: 5px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background:$bg-py;
+        border-radius: 50px;
+    }
+    .feedback{
+        &__box{
+            &::-webkit-scrollbar{
+                height: 8px;
+            }
+            &::-webkit-scrollbar-thumb{
+                background:$bg-py;
+            }
+        }
+    }
+}

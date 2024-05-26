@@ -1,0 +1,125 @@
+.hero{
+    &__wrapper{
+        display: flex;
+        gap: 20px;
+    }
+    &__desc{
+        width: 50%;
+        margin-top: 129px;
+    }
+    &__content{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 70px;
+        text-align: left;
+        color: $bg-content;
+        margin-bottom: 20px;
+    }
+    b{
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 70px;
+        text-align: left;
+        color: $bg-content;
+    }
+    &__info{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        color: $bg-text;
+    }
+    &__btn{
+        width: 250px;
+        height: 60px;
+        border-radius: 10px;
+        margin-top: 50px;
+        border: none;
+        background: $bg-py;
+        color: $bg-sy;
+        font-size: 18px;
+        transition: .3s;
+        &:hover{
+            transform: scale(1.2);
+            background: red;
+            box-shadow: 0px 0px 20px 0px rgba(255, 0, 0, 0.955);
+        }
+    }
+    &__img{
+        max-width:100%;
+        padding-top: 100px;
+    }
+}
+
+
+
+@media (max-width:850px){
+    .hero{
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 200px;
+        }
+        &__desc{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            font-size:28px;
+        }
+        &__img{
+            img{
+                max-width:100%;
+            }
+        }
+    }
+
+}
+
+@media (max-width:550px){
+    .hero{
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 200px;
+        }
+        &__desc{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            font-size: 24px;
+        }
+        &__img{
+            img{
+                max-width:100%;
+            }
+        }
+    }
+
+}
+
+@media (max-width:380px){
+    .hero{
+        &__content{
+            font-size: 24px;
+            b{
+                font-size: 24px;
+            }
+        }
+        &__info{
+            font-size: 12px;
+        }
+        &__img{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}

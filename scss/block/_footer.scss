@@ -1,0 +1,76 @@
+.footer{
+    width: 100%;
+    background: rgba(248, 248, 248, 1);
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        padding-top: 80px;
+    }
+    &__card{
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+        gap: 20px;
+        .text__sm{
+            color:$bg-text;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .text__lg{
+            font-size: 18px;
+            font-weight: 600;
+            color: $bg-content;
+        }
+    }
+    &__card img{
+        width: 149px;
+        height: 46px;
+        transition: .4s;
+    }
+    &__card img:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    &__icon{
+        display: flex;
+        flex-direction: row;
+    }
+    &__icon img{
+        width: 70px;
+        height: 70px;
+    }
+    &__collection{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__item{
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(79, 86, 101, 1);
+        cursor: pointer;
+        transition: .4s;
+    }
+    &__item:hover{
+        color: $bg-py;
+        transform: translate(5px, 5px)
+
+    }
+}
+
+@media (max-width:600px) {
+    .footer{
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &__card{
+            width: 100%;
+            padding: 10px;
+        }
+    }
+}

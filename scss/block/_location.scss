@@ -1,0 +1,70 @@
+.location{
+    margin-top: 150px;
+    &__title{
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: center;
+        color: $bg-content;
+    }
+    &__desc{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        color: $bg-text;
+        margin-top: 20px;
+        margin-bottom: 155px;
+    }
+}
+
+@media  (max-width:990px){
+    .location{
+        &__map{
+            img{
+                max-width: 100%;
+            }
+        }
+        &__sponsor{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:850px){
+    .location{
+        &__map{
+            img{
+                max-width: 100%;
+            }
+        }
+        &__sponsor{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:550px){
+    .location{
+        &__title{
+            font-size: 28px;
+        }
+        &__desc{
+            font-size: 16px;
+        }
+        &__map{
+            img{
+                max-width: 100%;
+            }
+        }
+        &__sponsor{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}

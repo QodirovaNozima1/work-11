@@ -1,0 +1,104 @@
+.subscribe{
+    margin-top: 80px;
+    &__box{
+        position: relative;
+        margin-bottom: -100px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 10px #f2efefcd;
+        width: 100%;
+        padding: 50px 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background:white;
+        z-index: 222;
+    }
+    &__content{
+        width: 35%;
+        height: auto;
+        margin-left: 60px;
+    }
+    &__title{
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 45px;
+        text-align: left;
+        color: $bg-content;
+        margin-bottom: 10px;
+    }
+    &__desc{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        color: $bg-text;
+    }
+    .btn{
+        width: 250px;
+        height: 60px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 16px;
+        background: $bg-py;
+        transition: .5s;
+        margin-right: 70px;
+        &:hover{
+            transform: scale(1.1);
+            background: red;
+            box-shadow: 0px 0px 20px 0px rgba(255, 0, 0, 0.955);
+        }
+    }
+}
+
+@media (max-width:990px){
+    .subscribe{
+        &__title{
+            font-size: 32;
+        }
+        &__desc{
+            font-size: 16px;
+        }
+    }
+}
+
+
+@media (max-width:850px){
+    .subscribe{
+        width: 100%;
+        &__box{
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: auto;
+        }
+        &__title{
+            font-size: 24px;
+        }
+        &__desc{
+            font-size: 18px;
+        }
+        &__btn{
+            width: 270px;
+            height: 116px;
+            display: flex;
+            .btn{
+                width: 150px;
+                height: 40px;
+                border-radius: 10px;
+                border: none;
+                margin: auto;
+            }
+        }
+    }
+}
